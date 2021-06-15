@@ -33,11 +33,6 @@
 
 # CodeLite
 .codelite/
-Makefile
-*.mk
-*/*.txt
-primos.dat
-prog1.dat
 compile_commands.json
 */Debug/
 */Release/
