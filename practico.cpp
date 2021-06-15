@@ -99,9 +99,6 @@ int main() {
     string nombreFicheroCorregido;
     getline(cin, nombreFicheroCorregido);
 
-ofstream g("donde.txt");
-g.close();
-
     ifstream original(nombreFicheroOriginal);
     if (original.is_open()) {
         ofstream corregido(nombreFicheroCorregido);
