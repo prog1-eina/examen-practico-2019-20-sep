@@ -68,11 +68,9 @@ void corregirLinea(string& linea) {
  */
 void corregirMayusculas(istream& original, ostream& corregido) {
     string linea;
-    getline(original, linea);
-    while (!original.eof()) {
+    while (getline(original, linea)) {
         corregirLinea(linea);
         corregido << linea << endl;
-        getline(original, linea);
     }
 }
 
