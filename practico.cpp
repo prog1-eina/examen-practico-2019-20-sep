@@ -26,8 +26,7 @@ bool hayQueCorregir(const string linea) {
     for (unsigned int i = 0; i < linea.length(); i++) {
         if (isupper(linea.at(i))) {
             mayusculas++;
-        }
-        else if (islower(linea.at(i))) {
+        } else if (islower(linea.at(i))) {
             minusculas++;
         }
     }
@@ -47,8 +46,7 @@ void corregirLinea(string& linea) {
         for (unsigned int i = 0; i < linea.length(); i++) {
             if (isupper(linea.at(i))) {
                 linea.at(i) = tolower(linea.at(i));
-            }
-            else {
+            } else {
                 linea.at(i) = toupper(linea.at(i));
             }
         }
@@ -105,14 +103,12 @@ int main() {
             corregido.close();
             cout << "El fichero \"" << nombreFicheroCorregido 
                  << "\" se ha generado correctamente." << endl;
-        }
-        else {
+        } else {
             cerr << "No ha podido crearse el fichero \"" 
                  << nombreFicheroCorregido << "\"." << endl;        
         }
         original.close();
-    }
-    else {
+    } else {
         cerr << "No ha podido abrirse el fichero \"" 
              << nombreFicheroOriginal << "\"." << endl;        
     }
