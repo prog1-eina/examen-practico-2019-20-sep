@@ -41,7 +41,7 @@ bool hayQueCorregir(const string linea) {
  *       minúsculas de «linea». En caso contrario, no ha realizado ningún
  *       cambio.
  */
-void corregirLinea(string& linea) {
+void corregirLinea(string &linea) {
     if (hayQueCorregir(linea)) {
         for (unsigned int i = 0; i < linea.length(); i++) {
             if (isupper(linea.at(i))) {
@@ -64,7 +64,7 @@ void corregirLinea(string& linea) {
  *       aparece al menos una minúscula y hay más letras mayúsculas que 
  *       minúsculas. «original» y «corregido» siguen abiertos.
  */
-void corregirMayusculas(istream& original, ostream& corregido) {
+void corregirMayusculas(istream &original, ostream &corregido) {
     string linea;
     while (getline(original, linea)) {
         corregirLinea(linea);
