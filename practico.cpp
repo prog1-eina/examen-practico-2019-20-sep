@@ -1,4 +1,4 @@
-/******************************************************************************\
+/******************************************************************************
  * Curso de Programación 1. Curso 2019-20 (adaptado al 2020-21)
  * Autores: Miguel Ángel Latre
  * Última revisión: 22 de diciembre de 2020
@@ -8,7 +8,7 @@
  * Nota: El código de este programa no está repartido en varios módulos, por lo
  *       que se puede utilizar la extensión Code Runner de Visual Studio Code
  *       para ejecutarlo (Ctrl + Alt + N).
-\******************************************************************************/
+ *****************************************************************************/
 #include <cctype>
 #include <iostream>
 #include <fstream>
@@ -21,9 +21,9 @@ using namespace std;
  *       contrario, ha devuelto false.
  */
 bool hayQueCorregir(const string linea) {
-    unsigned int mayusculas = 0;
-    unsigned int minusculas = 0;
-    for (unsigned int i = 0; i < linea.length(); i++) {
+    unsigned mayusculas = 0;
+    unsigned minusculas = 0;
+    for (unsigned i = 0; i < linea.length(); i++) {
         if (isupper(linea.at(i))) {
             mayusculas++;
         } else if (islower(linea.at(i))) {
@@ -43,7 +43,7 @@ bool hayQueCorregir(const string linea) {
  */
 void corregirLinea(string &linea) {
     if (hayQueCorregir(linea)) {
-        for (unsigned int i = 0; i < linea.length(); i++) {
+        for (unsigned i = 0; i < linea.length(); i++) {
             if (isupper(linea.at(i))) {
                 linea.at(i) = tolower(linea.at(i));
             } else {
