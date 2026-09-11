@@ -1,7 +1,6 @@
 /******************************************************************************
  * Curso de Programación 1. Curso 2019-20 (adaptado al 2020-21)
  * Autores: Miguel Ángel Latre
- * Última revisión: 22 de diciembre de 2020
  * Resumen: Solución examen práctico de la 2.ª convocatoria de Programación 1
  *          (enunciado adaptado a los cambios hechos en la asignatura en el
  *          curso 2020-21).
